@@ -1,5 +1,5 @@
 {
-  "private": true,
+  "name": "monorepo-pretty-charts",
   "author": "1596064580@qq.com",
   "scripts": {
     "build": "turbo run build",
@@ -24,7 +24,6 @@
     "typescript": "~5.2.2"
   },
   "packageManager": "pnpm@8.9.0",
-  "name": "monorepo-pretty-charts",
   "config": {
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
