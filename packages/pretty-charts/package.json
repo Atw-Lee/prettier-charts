@@ -1,5 +1,5 @@
 {
-  "name": "@lee/pretty-charts",
+  "name": "@pretty-charts/pretty-charts",
   "version": "0.0.1",
   "description": "",
   "module": "dist/esm/index.js",
