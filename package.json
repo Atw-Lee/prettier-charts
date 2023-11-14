@@ -1,17 +1,51 @@
 {
   "private": true,
+  "author": "1596064580@qq.com",
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "commit": "cz",
+    "preinstall": "npx only-allow pnpm"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "@commitlint/cli": "^18.4.1",
+    "@commitlint/config-conventional": "^18.4.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.48.0",
+    "eslint-config-alloy": "^5.1.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.1.0",
     "prettier": "^3.0.3",
-    "tsconfig": "workspace:*",
-    "turbo": "latest"
+    "turbo": "latest",
+    "typescript": "~5.2.2"
   },
   "packageManager": "pnpm@8.9.0",
-  "name": "monorepo-pretty-charts"
+  "name": "monorepo-pretty-charts",
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{md,json}": [
+      "prettier --write --no-error-on-unmatched-pattern"
+    ],
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --parser=typescript --write"
+    ]
+  }
 }
