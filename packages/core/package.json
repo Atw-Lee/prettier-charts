@@ -1,0 +1,20 @@
+{
+  "name": "@prettier-charts/core",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "father": "father build"
+  },
+  "sideEffects": [],
+  "keywords": [],
+  "authors": [
+    "1596064580@qq.com"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "echarts": ">=5.0.0",
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  }
+}

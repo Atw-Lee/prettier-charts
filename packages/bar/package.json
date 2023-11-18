@@ -1,0 +1,20 @@
+{
+  "name": "@prettier-charts/bar",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "father": "father build"
+  },
+  "sideEffects": [],
+  "keywords": [],
+  "authors": [
+    "1596064580@qq.com"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@prettier-charts/core": "workspace:*"
+  }
+}

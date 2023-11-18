@@ -37,3 +37,9 @@ yarn-error.log*
 
 pnpm-lock.yaml
 .vscode
+
+
+# dumi
+.dumi/tmp
+.dumi/tmp-production
+/dist

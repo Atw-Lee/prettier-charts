@@ -1,5 +1,5 @@
 {
-  "name": "monorepo-prettier-charts",
+  "name": "prettier-charts",
   "author": "1596064580@qq.com",
   "scripts": {
     "build": "turbo run build",
