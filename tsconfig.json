@@ -13,7 +13,9 @@
     "moduleResolution": "Bundler",
     "module": "ESNext",
     "noEmit": true,
+    "jsx": "react",
     "lib": ["es2022", "dom", "dom.iterable"]
   },
+  "include": ["packages/**/*.tsx", "packages/**/*.ts"],
   "exclude": ["node_modules"]
 }

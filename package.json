@@ -2,8 +2,8 @@
   "name": "prettier-charts",
   "author": "1596064580@qq.com",
   "scripts": {
-    "build": "turbo run build",
     "dev": "turbo run dev",
+    "build": "turbo run build",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "commit": "cz",
@@ -13,16 +13,22 @@
     "@changesets/cli": "^2.26.2",
     "@commitlint/cli": "^18.4.1",
     "@commitlint/config-conventional": "^18.4.0",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.48.0",
     "eslint-config-alloy": "^5.1.2",
+    "father": "^4.3.7",
     "husky": "^8.0.3",
     "lint-staged": "^15.1.0",
     "prettier": "^3.0.3",
     "turbo": "latest",
-    "typescript": "~5.2.2",
-    "father": "^4.3.7"
+    "typescript": "~5.2.2"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
   },
   "packageManager": "pnpm@8.9.0",
   "config": {
