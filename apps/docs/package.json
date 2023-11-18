@@ -1,0 +1,34 @@
+{
+  "name": "@prettier-charts/docs",
+  "version": "0.0.1",
+  "description": "@prettier-charts/docs",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "dumi dev",
+    "build": "dumi build",
+    "prepare": "husky install && dumi setup"
+  },
+  "authors": [
+    "1596064580@qq.com"
+  ],
+  "license": "MIT",
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{md,json}": [
+      "prettier --write --no-error-on-unmatched-pattern"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.2",
+    "@commitlint/config-conventional": "^18.4.2",
+    "dumi": "^2.2.14",
+    "husky": "^8.0.3",
+    "dumi-theme-chakra": "^0.0.22",
+    "lint-staged": "^15.1.0",
+    "prettier": "^3.1.0"
+  }
+}
