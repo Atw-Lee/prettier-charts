@@ -5,7 +5,7 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "dumi dev",
-    "build": "dumi build",
+    "site": "dumi build",
     "prepare": "husky install && dumi setup"
   },
   "authors": [

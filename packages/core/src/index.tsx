@@ -2,17 +2,16 @@
  * @Author: atwlee
  * @Date: 2023-11-18 09:04:08
  * @LastEditors: atwlee
- * @LastEditTime: 2023-11-18 09:55:25
+ * @LastEditTime: 2023-11-19 22:04:30
  * @Description:
- * @FilePath: /prettier-charts/src/Core/src/index.tsx
+ * @FilePath: /prettier-charts/packages/core/src/index.tsx
  */
-import echarts from "echarts";
-import React, { useCallback, useEffect, useRef } from "react";
+import * as echarts from "echarts";
+import { useEffect, useRef } from "react";
 function EChartsReact() {
   const echartsRef = useRef<HTMLDivElement>(null);
 
-  const initECharts = useCallback(() => {
-    console.log("echartsRef", echartsRef);
+  const initECharts = () => {
     const myChart = echarts.init(echartsRef.current);
     myChart.setOption({
       title: {
@@ -31,11 +30,10 @@ function EChartsReact() {
         },
       ],
     });
-  }, []);
-
-  const loadEChartsInstance = useCallback(() => {
+  };
+  const loadEChartsInstance = () => {
     initECharts();
-  }, []);
+  };
 
   useEffect(() => {
     loadEChartsInstance();

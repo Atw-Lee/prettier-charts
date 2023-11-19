@@ -1,8 +1,10 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalDependencies": ["tsconfig.json", ".father.base.ts"],
   "pipeline": {
-    "build": {},
+    "build": {
+      "cache": false,
+      "dependsOn": ["^build"]
+    },
     "lint": {},
     "dev": {
       "cache": false,

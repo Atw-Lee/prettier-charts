@@ -2,9 +2,12 @@
   "name": "@prettier-charts/core",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "father": "father build"
+    "dev": "father dev",
+    "build": "father build"
   },
   "sideEffects": [],
   "keywords": [],
@@ -12,9 +15,14 @@
     "1596064580@qq.com"
   ],
   "license": "MIT",
+  "devDependencies": {
+    "@prettier-charts/tsconfig": "workspace:*"
+  },
   "peerDependencies": {
-    "echarts": ">=5.0.0",
     "react": ">=16.9.0",
     "react-dom": ">=16.9.0"
+  },
+  "dependencies": {
+    "echarts": "^5.4.3"
   }
 }

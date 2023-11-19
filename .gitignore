@@ -43,3 +43,7 @@ pnpm-lock.yaml
 .dumi/tmp
 .dumi/tmp-production
 /dist
+
+/packages/**/es
+/packages/**/lib
+/packages/**/dist

@@ -1,0 +1,5 @@
+{
+  "extends": "@prettier-charts/tsconfig/react-library.json",
+  "include": ["src"],
+  "exclude": ["lib", "dist", "es", "node_modules"]
+}

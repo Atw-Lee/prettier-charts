@@ -1,0 +1,9 @@
+{
+  "name": "@prettier-charts/tsconfig",
+  "private": true,
+  "version": "0.0.0",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

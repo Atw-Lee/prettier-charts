@@ -6,7 +6,8 @@
   "module": "es/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "father": "father build"
+    "dev": "father dev",
+    "build": "father build"
   },
   "sideEffects": [],
   "keywords": [],
@@ -16,5 +17,8 @@
   "license": "MIT",
   "dependencies": {
     "@prettier-charts/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@prettier-charts/tsconfig": "workspace:*"
   }
 }
