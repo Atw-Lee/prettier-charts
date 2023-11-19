@@ -2,8 +2,8 @@
  * @Author: atwlee
  * @Date: 2023-11-18 13:02:04
  * @LastEditors: atwlee
- * @LastEditTime: 2023-11-19 21:50:16
- * @Description: 
+ * @LastEditTime: 2023-11-19 23:19:04
+ * @Description:
  * @FilePath: /prettier-charts/apps/docs/.dumirc.ts
  */
 import { defineConfig } from 'dumi';
@@ -17,6 +17,7 @@ export default defineConfig({
     { id: 'zh-CN', name: '中文' },
     { id: 'en-US', name: 'EN' },
   ],
+  monorepoRedirect: {},
   themeConfig: {
     name: 'Prettier Charts',
     ...defineThemeConfig({

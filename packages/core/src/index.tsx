@@ -2,7 +2,7 @@
  * @Author: atwlee
  * @Date: 2023-11-18 09:04:08
  * @LastEditors: atwlee
- * @LastEditTime: 2023-11-19 22:04:30
+ * @LastEditTime: 2023-11-19 23:21:35
  * @Description:
  * @FilePath: /prettier-charts/packages/core/src/index.tsx
  */
@@ -10,7 +10,6 @@ import * as echarts from "echarts";
 import { useEffect, useRef } from "react";
 function EChartsReact() {
   const echartsRef = useRef<HTMLDivElement>(null);
-
   const initECharts = () => {
     const myChart = echarts.init(echartsRef.current);
     myChart.setOption({
@@ -34,12 +33,11 @@ function EChartsReact() {
   const loadEChartsInstance = () => {
     initECharts();
   };
-
   useEffect(() => {
     loadEChartsInstance();
   }, []);
 
-  return <div ref={echartsRef} />;
+  return <div ref={echartsRef} style={{ height: "400px" }} />;
 }
 
 export default EChartsReact;

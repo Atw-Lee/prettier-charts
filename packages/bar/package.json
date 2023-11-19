@@ -6,7 +6,6 @@
   "module": "es/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "dev": "father dev",
     "build": "father build"
   },
   "sideEffects": [],
